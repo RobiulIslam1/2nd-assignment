@@ -1,0 +1,213 @@
+/* google fonts added */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,500;1,400&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+}
+nav h3{
+    margin: 40px 130px;
+}
+.first-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+    .first-article> h1{
+        font-size: 52px;
+    }
+
+    .prebook-now a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: #B9345A;
+        border: #B9345A;
+        padding: 5px 20px;
+        text-align: center;
+        border-radius: 20px;
+        height: 30px;
+        width:120px;
+    }
+    .fas{
+        padding-left: 10px
+    }
+    .first-article img{
+        background-image:url(images/Circle\ design.svg);
+        width: 100%;
+        transition: transform ease 1.5s;
+    }
+    .first-article img:hover{
+        transform: scale(1.5);
+    }
+
+/*--------------
+ second section
+  ------------ */
+
+
+.second-section{
+    padding-top: 200px;
+    padding-left: 80px;
+}
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+.second-section h1{
+    padding-left: 200px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+.product{
+    background-color: #f3f1ff;
+    box-shadow: 10px 10px 20px gray;
+    padding: 15px;
+    border-radius: 20px;
+}
+.fa-star.filled{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #858072;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.rating>p{
+    padding-left: 10px;
+}
+.see-more{
+    margin-right: 200px;
+    text-align: end;
+}
+.see-more a{
+    text-decoration: none;
+    color:#b93458;
+    font-size: 23px;
+}
+/* ---------------
+third section/
+--------------- */
+.third-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+.Subscribe{
+    column-gap: 20px;
+    margin: 100px 200px;
+}
+.Subscribe img{
+    width: 600px;
+
+    border-radius: 20px;
+}
+.sub-button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #B9345A;
+    border: #B9345A;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    width:120px;
+
+}
+.footer{
+    background-color: rgb(1, 1, 39);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer  a{
+    color: white;
+    padding: 0 5px;
+    align-items: center;
+}
+/* ------------
+media queries
+mobile devices
+------------- */
+@media only screen and (max-width:688px) {
+    .first-section{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        width:300px;
+        padding-left: 50px;
+        
+    }
+    .first-article{
+        width: 300px;
+    }
+    .first-section img{
+        
+        background-image:url(images/Circle\ design.svg);
+        width: 100%;
+    }
+    /*-------------
+     second section 
+     -------------*/
+    .second-section{
+        margin: 20px;
+        padding-left: 10px;
+    }
+    .second-section h1{
+        padding-left: 100px;
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+    .collection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .see-more{
+    text-align: end;
+    margin-right: 30px;
+    padding-top: 30px;
+    }
+    .see-more a {
+        font-size: 18px;
+    }
+    .third-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        column-gap: 1px;
+        justify-content: center;
+    }
+    .Subscribe{
+        margin-bottom: 0;
+
+    }
+.Subscribe img{
+    height: 350px;
+    width: 350px;
+}
+    .footer{
+        height: 200px;
+    }
+}
+/*===================
+ Media queries I-pad 
+ ================== */
+ @media only screen and (min-width:689px) and (max-width:991px) {
+.first-section{
+    align-items: center;
+    justify-items: center;
+}
+.second-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.collection{
+    grid-template-columns: repeat(1, 1fr);
+}
+ }
